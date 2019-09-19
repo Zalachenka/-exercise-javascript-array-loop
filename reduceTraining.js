@@ -7,3 +7,9 @@ const result = numbers.reduce(function(max, n) {
   }
 }, 0);
 console.log(result);
+
+const string = 'azertyuiop';
+const newString = string.reduce(function(letter, position) {
+  return string.slice(1::2);
+});
+console.log(newString);
